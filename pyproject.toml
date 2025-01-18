@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jira_dumper"
+version = "0.1.0"
+description = "Export all Jira issues and attachments using Playwright scraping"
+authors = ["Derek Ellis <me@ellisd.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.8"
+pytest-playwright = "^0.6.2"
+python-dotenv = "^1.0.1"
+tqdm = "^4.67.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jira_export_xml_attachments = 'jira_dumper.jira_export_xml_attachments:main'
+jira_export_xml = 'jira_dumper.jira_export_xml:main'
+jira_fetch_issues = 'jira_dumper.jira_fetch_issues:main'

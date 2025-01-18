@@ -1,0 +1,11 @@
+
+# Playwright
+node_modules/
+/playwright/.cache/
+scripts/auth_state.json
+
+# jira outputs
+output/
+jira_dumper/auth_state.json
+jira_dumper/__pycache__/
+.env
