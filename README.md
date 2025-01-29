@@ -95,7 +95,7 @@ Options:
                      today).
   --base-url TEXT    Base URL of the JIRA instance.
   --help             Show this message and exit.```
-
+```
 
 #### Final Command For Multiple Projects
 
